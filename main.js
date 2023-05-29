@@ -1,23 +1,23 @@
-//alertas
+//*alertas
 // alert("hola soy johan");
 
-//variables
+//*variables
 let nombre = "Johan Zuluaga"; //*MEJOR RENDIMIENTO
 nombre = "Alan Smith";
 
-//Constantes
+//*Constantes
 // const altura = 187;
 let altura = 187;
 const apellido = "Zuluaga";
 
-//Mostrar en consola
+//*Mostrar en consola
 console.log(nombre);
 console.log(altura);
 
-//Concatenacion
+//*Concatenacion
 let concatenacion = nombre + " " + apellido;
 
-//seleccionar elementos del dom
+//*seleccionar elementos del dom
 let datos = document.querySelector("#datos");
 datos.innerHTML = `
     <hr>
@@ -27,7 +27,7 @@ datos.innerHTML = `
     <h3>mido ${altura}cm</h3>
     `;
 
-//Condiciones
+//*Condiciones
 altura = 180;
 
 if (altura >= 185) {
@@ -36,14 +36,14 @@ if (altura >= 185) {
   datos.innerHTML += "<h1>Eres una persona bajita</h1>";
 }
 
-//Bucles
+//*Bucles
 // for(inicializador; condicion;modificador)
 
 for (let year = 2000; year <= 2023; year++) {
   datos.innerHTML += `<h2> Estamos en el año ${year}</h2>`;
 }
 
-//Array
+//*Array
 let nombres = ["Victor", "Francisco", "Pepe"];
 
 let divNombres = document.querySelector("#nombres");
@@ -62,7 +62,7 @@ for (let nombre of nombres) {
 
 divNombres.innerHTML += "</ul>";
 
-// Funciones
+//*Funciones
 
 const miInformacion = (nombre, altura) => {
   let misDatos = `
@@ -84,3 +84,25 @@ const Imprimir = () => {
 };
 
 Imprimir();
+
+//* let y var
+
+var numero = 40;
+console.log(numero);
+
+if (true) {
+  var numero = 50;
+  console.log(numero);
+}
+
+console.log(numero);
+
+var texto = "Curso Js";
+console.log(texto);
+
+if (true) {
+  let texto = "Curso Js2";
+  console.log(texto);
+}
+
+console.log(texto);
