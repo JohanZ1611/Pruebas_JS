@@ -87,6 +87,8 @@ Imprimir();
 
 //* let y var
 
+//!var
+
 var numero = 40;
 console.log(numero);
 
@@ -96,6 +98,8 @@ if (true) {
 }
 
 console.log(numero);
+
+//!let
 
 var texto = "Curso Js";
 console.log(texto);
