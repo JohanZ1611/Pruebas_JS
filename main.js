@@ -110,3 +110,15 @@ if (true) {
 }
 
 console.log(texto);
+
+//*Constantes
+
+//es como una variable pero su valor no puede cambiar
+
+var web = "https://victorroblesweb.com";
+const ip = "192.88.0.12";
+
+web = "https://victorroblescuro.com";
+// ip = "22332";
+
+console.log(web, ip);
