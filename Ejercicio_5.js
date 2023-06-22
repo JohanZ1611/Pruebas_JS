@@ -23,3 +23,35 @@ const ordenarPorApellidos = [
   "Brad Pitt",
   "Sylvester Stallone",
 ];
+
+// const RecorrerNombres = (NombreYapellido) => {
+//   for (let nombre of NombreYapellido) {
+//     let nombresSeparados = nombre.split(" ");
+//     // console.log(nombresSeparados);
+//     let apellidos = nombresSeparados[1];
+
+//     return apellidos;
+//   }
+// };
+
+// RecorrerNombres(ordenarPorApellidos);
+
+// Función que compara los apellidos
+const compararApellidos = (a, b) => {
+  // Extrae los apellidos de cada elemento
+  let apellidoA = a.split(" ")[1];
+  let apellidoB = b.split(" ")[1];
+  // Compara los apellidos alfabéticamente
+  if (apellidoA < apellidoB) {
+    return -1;
+  }
+  if (apellidoA > apellidoB) {
+    return 1;
+  }
+  return 0;
+};
+
+// Ordena el array usando la función compararApellidos
+ordenarPorApellidos.sort(compararApellidos);
+
+console.log(ordenarPorApellidos); // ["Antonio Alcantara", "Robert DeNiro", "Al Pacino", "Brad Pitt", "Víctor Robles", "Sylvester Stallone"]
